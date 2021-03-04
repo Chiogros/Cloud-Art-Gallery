@@ -1,3 +1,15 @@
-body{
-    
+body {
+  background-color: white;
+  color: #f55e61;
+  display: flex;
+}
+
+nav {
+  background-color: #f55e61;;
+  color: white;
+}
+
+div {
+  background-color: white;
+  color: #f55e61;
 }
