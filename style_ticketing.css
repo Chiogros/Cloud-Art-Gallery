@@ -43,34 +43,19 @@ hr {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: center;
     margin-top: 10em;
 }
 
-article {
-    margin: auto;
+section form div {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 1em;
     align-items: center;
-    margin-bottom: 15em;
 }
 
-article img {
-    height: 500px;
-}
-
-article h2 {
-    font-size: 2em;
-    text-align: center;
-    font-style: italic;
-    color: #F55E61;
-}
-
-article p {
-    color: #F56E71;
-    margin: 0em;
-    font-size: larger;
+section label {
+    display: block;
+    width: 5em;
 }
 
 footer {
