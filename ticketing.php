@@ -1,5 +1,11 @@
 <?php
-	$tickets = array();
+if(isset($_GET['date'])){
+	$date=htmlentities($_POST['date']);
+	$tickets=(int)htmlentities($_POST['number']);
+	$str;
+	
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +28,7 @@
 		<hr>
 	</header>
 	<section>
-		<form method="POST" action="">
+		<form method="GET" action="/ticketing.php">
 			<div>
 				<label for="date">Date : </label>
   				<input type="date" id="date" name="date">
@@ -31,7 +37,7 @@
 				<label for="number">Quantity : </label>
 				<input type="number" id="number" name="number">
 			</div>
-			<input type="button" value="Submit"><br>
+			<input type="submit" value="Submit"><br>
 		</form>
 		<ul>
 			<h3>Payment method :</h3>
@@ -41,7 +47,7 @@
 	</section>
 	<aside>
 		<?php
-			function basket() {
+			/*function basket() {
 				global $tickets;print "<p>salut</p>";
 				$tickets[$_POST['date']] = $tickets[$_POST['date']] + $_POST['number'];
 			}
@@ -52,6 +58,17 @@
 				print "<tr><th>" . $date . "</th><td>" . $number . "</td></tr>"; 
 			}
 			print '</table>';
+			*/
+			if(isset($_GET['date'])){
+				echo "voila les daltons";
+				$str= "<table><tr><th>$date</th><td>$tickets</td></tr></table>";
+				echo $str;
+			}
+
+
+	
+
+
 		?>
 	</aside>
 	<footer>
