@@ -22,7 +22,7 @@ if(isset($_GET['date'])){
 				<li><a href="artworks.html">Artworks</a></li>
 				<li><a href="#">Ticketing</a></li>
 				<li><a href="#">Schedule</a></li>
-				<li><a href="#">Contact us</a></li>
+				<li><a href="contact.html">Contact us</a></li>
 			</ul>
 		</nav>
 		<hr>
